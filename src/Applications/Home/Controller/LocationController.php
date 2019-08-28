@@ -8,17 +8,17 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * Class HomeController
+ * Class LocationController
  * @package App\Applications\Home\Controller
  */
-class HomeController extends AbstractController
+class LocationController extends AbstractController
 {
     /**
-     * @Route("/", name="home.index")
+     * @Route("/location", name="location.index")
      * @return Response
      */
     public function index(): Response
     {
-        return $this->render('pages/home.html.twig');
+        return $this->render('pages/locations.html.twig', ['current_menu' => 'locations']);
     }
 }
