@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="@localhost" uuid="ca8fc327-45d3-4bbc-8f8d-05e5dffca131">
+      <database-info product="MySQL" version="5.7.27-0ubuntu0.16.04.1" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.4.1" dbms="MYSQL" exact-version="5.7.27">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>stephane</user-name>
+      <introspection-schemas>*:demosymfony</introspection-schemas>
+    </data-source>
+  </component>
+</project>
