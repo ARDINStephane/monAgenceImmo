@@ -966,5 +966,119 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
+    <table id="247" parent="9" name="migration_versions">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="248" parent="9" name="property">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <column id="249" parent="247" name="version">
+      <Position>1</Position>
+      <DataType>varchar(14)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="247" name="executed_at">
+      <Position>2</Position>
+      <Comment>(DC2Type:datetime_immutable)</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="251" parent="247" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>version</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="252" parent="248" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="248" name="title">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="254" parent="248" name="desciption">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="255" parent="248" name="surface">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="248" name="rooms">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="248" name="bedrooms">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="248" name="floor">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="259" parent="248" name="price">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="260" parent="248" name="heat">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="248" name="address">
+      <Position>10</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="262" parent="248" name="city">
+      <Position>11</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="263" parent="248" name="postal_code">
+      <Position>12</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="248" name="created_at">
+      <Position>13</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="248" name="sold">
+      <Position>14</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="266" parent="248" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

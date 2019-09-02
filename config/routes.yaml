@@ -1,3 +1,3 @@
 controllers:
-    resource: ../src/Applications/*/Controller/*Controller.php
+    resource: ../src/Controller/*Controller.php
     type: annotation
