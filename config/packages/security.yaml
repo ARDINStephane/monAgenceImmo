@@ -13,7 +13,7 @@ security:
             anonymous: true
 
             form_login:
-                check_path: app_login
+                check_path: login
             logout:
                 path: /logout
                 target: /

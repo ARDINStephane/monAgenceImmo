@@ -14,7 +14,7 @@ use Symfony\Component\Security\Core\Security;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/loginn", name="loginn")
+     * @Route("/login", name="login")
      * @return Response
      */
     public function login(AuthenticationUtils $authenticationUtils, Request $request): Response
