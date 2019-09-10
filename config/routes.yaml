@@ -1,3 +1,6 @@
 controllers:
     resource: ../src/Controller/*Controller.php
     type: annotation
+
+logout:
+    path: /logout
