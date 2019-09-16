@@ -1,9 +1,24 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="jumbotron text-center">
-        <h1>Les biens</h1>
-        <p>Elle est super cette agence</p>
+    <div class="jumbotron">
+        <div class="container">
+            {{ form_start(form) }}
+            <div class="form-row align-items-end">
+                <div class="col">
+                    {{ form_row(form.minSurface) }}
+                </div>
+                <div class="col">
+                    {{ form_row(form.maxPrice) }}
+                </div>
+                <div class="col">
+                <div class="form-group">
+                    <button class="btn btn-primary">Rechercher</button>
+                </div>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
     </div>
     <div class="container">
         <h2>Les derniers biens</h2>
