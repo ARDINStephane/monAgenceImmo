@@ -43,7 +43,7 @@ class AdminController extends AbstractController
     }
 
     /**
-     * @Route("/admin/{id}", name="admin.property.edit", methods={"GET", "POST"})
+     * @Route("/admin/property/{id}", name="admin.property.edit", methods={"GET", "POST"})
      * @return Response
      */
     public function edit(Property $property, Request $request): Response
@@ -90,7 +90,7 @@ class AdminController extends AbstractController
     }
 
     /**
-     * @Route("/admin/{id}", name="admin.property.delete", methods="DELETE")
+     * @Route("/admin/property/{id}", name="admin.property.delete", methods="DELETE")
      * @return Response
      */
     public function delete(Property $property, Request $request): Response

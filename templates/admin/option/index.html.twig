@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-4">
+        <h1>Administrer les options</h1>
+        {{  include('flash_messages.html.twig') }}
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                </tr>
+            </thead>
+            <body>
+                <div class="flex row">
+                    {% for option in  options %}
+                        <tr>
+                            <td>{{ option.name }}</td>
+                            <td>
+                                <a href="{{ path('admin.option.edit', {id: option.id}) }}"class="btn btn-secondary">Editer</a>
+                                <form method="post" action="{{ path('admin.option.delete', {id:option.id}) }}" style="display: inline-block" onsubmit="return confirm('Etes vous vraiment sur?')">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ option.id) }}">
+                                    <button class="btn btn-danger">Supprimer</button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </div>
+            </body>
+        </table>
+
+        <div class="texte-right">
+            <a href="{{ path("admin.option.new") }}" class="btn btn-primary">Créer une nouvelle option</a>
+        </div>
+    </div>
+{% endblock %}
