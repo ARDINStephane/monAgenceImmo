@@ -1,0 +1,7 @@
+<div xmlns="http://www.w3.org/1999/html">
+     {{ contact.firstname }} {{ contact.lastname }} souhaite des informations sur le bien
+    <a href="{{ url('property.show', {slug:contact.property.slug, id:contact.property.id }) }}">{{ contact.property.title }}</a>
+</div>
+<div>
+    {{ contact.message }}
+</div>
