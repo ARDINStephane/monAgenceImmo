@@ -2,6 +2,15 @@
     "behat/transliterator": {
         "version": "v1.2.0"
     },
+    "cache/adapter-common": {
+        "version": "1.1.0"
+    },
+    "cache/apcu-adapter": {
+        "version": "1.0.0"
+    },
+    "cache/tag-interop": {
+        "version": "1.0.0"
+    },
     "cocur/slugify": {
         "version": "v3.2"
     },
@@ -120,6 +129,18 @@
     "fzaninotto/faker": {
         "version": "v1.8.0"
     },
+    "google/recaptcha": {
+        "version": "1.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.1",
+            "ref": "d087df3e087f50da3955f2def05079380da5894b"
+        },
+        "files": [
+            "config/packages/google_recaptcha.yaml"
+        ]
+    },
     "imagine/imagine": {
         "version": "v0.7.1"
     },
@@ -180,6 +201,9 @@
     },
     "psr/log": {
         "version": "1.1.0"
+    },
+    "psr/simple-cache": {
+        "version": "1.0.1"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -583,6 +607,9 @@
     },
     "symfony/yaml": {
         "version": "v4.3.3"
+    },
+    "twig/cache-extension": {
+        "version": "1.4-dev"
     },
     "twig/twig": {
         "version": "v2.11.3"

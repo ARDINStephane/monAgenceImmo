@@ -1,3 +1,7 @@
+{#
+ {% cache 'property' ~ property.id property.updatedAt.timestamp %}
+ #}
+
 <div class="card mb-4">
     {% if property.imageName %}
         <img src="{{ vich_uploader_asset(property, 'imageFile') | imagine_filter('thumb') }}" alt="card-img-top" style="width: 100%; height:auto;">
@@ -15,3 +19,6 @@
         <p class="card-text">{{ property.desciption }} | nl2br</p>
     </div>
 </div>
+{#
+{% endcache %}
+ #}
