@@ -5,7 +5,7 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-let $ = require('jquery');
+const $ = require('jquery');
 // any CSS you require will output into a single css file (app.css in this case)
 require('../css/app.css');
 
@@ -13,10 +13,12 @@ require('select2');
 
 let $contactButton = $('#contactButton');
 $contactButton.click(e => {
+    console.log('clic');
     e.preventDefault();
     $('#contactForm').slideDown();
     $contactButton.slideUp();
 })
+console.log('trop');
 
 $('select').select2();
 
