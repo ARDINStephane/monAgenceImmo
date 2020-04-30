@@ -15,7 +15,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "select2": "^4.0.10",
         "styled-jsx": "^3.2.2"
     }
